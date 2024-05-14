@@ -5,6 +5,73 @@
 }
 
 body{
-    background-color: #F7F7F7;
+    background-color: rgb(177, 107, 121);
+    font-family: sans-serif;
 }
 
+#age-calculator-container {
+    min-width: 60vw;
+    background-color: #e3dbac;
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.392);
+    padding: 20px;
+    border-radius: 5px;
+} 
+
+#age-calculator-container  h1{
+    font-weight:600;
+    text-align: center;
+    color: rgb(54, 67, 80);
+} 
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
+}
+
+label {
+    padding: 25px;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(54, 67, 80);
+} 
+
+input[type=date] {
+ min-width: 30vw;
+ margin-inline: auto;
+ padding: 10px;
+ font-size: 1.2em;
+ background-color: #e1ddcc;
+ border: 2px solid rgba(0, 0, 0, 0.434);
+ margin-bottom: 15px;
+
+} 
+
+button {
+    background-color: #f5da43;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #989191;
+    font-family: cursive;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #342d2d;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+} 
+
+button:hover{
+    background-color: #e6b39e;
+} 
+
+#calculated-age-result{
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-size: bold;
+    font-weight: 500;
+}
